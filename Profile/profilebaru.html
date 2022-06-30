@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/profile1.css">
+    </head>
+    	<header class="head1">
+            <img src="logo.PNG" style="width: 10%">
+    	</header>
+        <body>
+        <div>
+        	<nav class="navigate">
+                <div>
+            		<ul>
+            			<li class="item"><a href="../Home/Home.html">Beranda</a></li>
+            			<li class="item"><a href="../Shopping/Shopping.html">Belanja</a></li>
+            			<li class="item"><a href="../Donatur/Donatur.html">Donatur</a></li>
+            			<li class="item"><a href="../Profile/profilebaru.html">Profil</a></li>
+              	</ul>
+                </div>
+        	</nav>
+        </div>
+
+        <div class="form-style-3">
+          <form>
+            <fieldset><legend>Edit Profile</legend>
+              <label for="user"><span>Username<span class="required">*</span></span><input type="text" class="input-field" name="user" placeholder="username" value="jesicca01" /></label>
+              <label for="name"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" placeholder="full name" value="jesicca permata" /></label>
+              <label for="password"><span>Password <span class="required">*</span></span><input type="password" class="input-field" name="password" placeholder="password" value="asdfgghj" /></label>
+              <label for="email"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="email" placeholder="email" value="jesicca01@gmail.com" /></label>
+              <label for="phone"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="phone" placeholder="number phone" value="081321257182" /></label>
+              <label for="tanggal"><span>Tanggal Lahir <span class="required">*</span></span><input type="date" class="input-field"  name="tanggal" value="tanggal"/></label>
+              <label for="alamat"><span>Alamat <span class="required">*</span></span><input type="text" class="input-field" name="alamat" placeholder="Address" value="jalan jati merah no.12 kota bekasi" /></label>
+              <button type="submit">Save Profile</button>
+              <button type="button">Back to home</button>
+              <img class="poto" src="1.png"/>
+          </form>
+      </div>
+  </body>
+  <script type="text/javascript">
+    function validasi() {
+        var user = document.getElementById("user").value;
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var tanggal = document.getElementById("tanggal").value;
+        var alamat = document.getElementById("alamat").value;
+        if (user != "" && name!="" && password !=""  && email !=""&& password !="" && password !="") {
+            return true;
+        }else{
+            alert('Anda harus mengisi data dengan lengkap !');
+        }
+    }
+</script>
+
+</html>

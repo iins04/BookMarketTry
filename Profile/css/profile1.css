@@ -1,0 +1,205 @@
+<style>
+
+header{
+	display: flex;
+	background-color: f7f7f7;
+	width: 100%;
+	text-align: left;
+}
+header p{
+	padding-top: 1px;
+	padding-left: 20px;
+	padding-bottom: 1px;
+
+}
+nav p{
+	width: 100%;
+}
+nav.navigate{
+	display: flex;
+	background-color: bc5b5b;
+}
+
+nav.navigate ul{
+	display: flex;
+	list-style: none;
+	font-size: 15px;
+	font-family: calibri;
+}
+
+nav.navigate li{
+	margin: 5px;
+	padding: 5px;
+	background-color: none;
+}
+nav.navigate ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+.item:hover{
+	background-color: darkgrey;
+}
+/*.navigate ul a:hover{
+	background-color: f1e7e6;
+}*/
+nav{
+	background-color: f1e7e6;
+	padding: none;
+}
+
+
+nav p{
+	padding-bottom: none;
+	padding-left: 10px;
+	font-family: calibri;
+}
+
+#copy{
+	font-size: 15px;
+	font-style: italic;
+	background-color: f1e7e6;
+	color: white;
+	padding: 15px;
+	text-align: center;
+}
+.display p{
+	color:bc5b5b;
+	font-size: 115%;
+}
+
+
+body{
+  background-color: #F7F7F7;
+  background-size:100% 100%;
+  font-family:"Open Sans", sans-serif;
+}
+a.nostyle{
+    color:inherit;
+    text-decoration:none;
+    padding:0;
+    margin:0;
+}
+
+.form-style-3{
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	position: relative;
+	top: 20px;
+	left: 25%;
+
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+	color: f7f7f7;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 600px;
+	color: bc5b5b;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #F6E4E4;
+	padding: 20px;
+	background:#F6E4E4;
+	box-shadow: inset 0px 0px 15px #F1EAEA;
+	-moz-box-shadow: inset 0px 0px 15px #F1EAEA;
+	-webkit-box-shadow: inset 0px 0px 15px #F1EAEA;
+}
+.form-style-3 fieldset legend{
+	color: #C28F8F;
+	border-top: 1px solid #F1EAEA;
+	border-left: 1px solid #F1EAEA;
+	border-right: 1px solid #F1EAEA;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #F4EDED;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #FFFAFA;
+	-moz-box-shadow:-0px -1px 2px #FFFAFA;
+	-webkit-box-shadow:-0px -1px 2px #FFFAFA;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=time],
+.form-style-3 input[type=email],
+.form-style-3 input[type=password],
+.form-style-3 select{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: #C28F8F;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #FFFAFA;
+	-moz-box-shadow: inset 1px 1px 4px #FFFAFA;
+	-webkit-box-shadow: inset 1px 1px 4px #FFFAFA;
+	background: #F4EDED;
+	width:50%;
+}
+
+.form-style-3  button[type=submit]{
+	background: #F4EDED;
+	border: 1px solid  #FFC2DC;
+	padding: 5px 15px 5px 15px;
+	color: #C28F8F;
+	box-shadow: inset -1px -1px 3px #FFFAFA;
+	-moz-box-shadow: inset -1px -1px 3px #FFFAFA;
+	-webkit-box-shadow: inset -1px -1px 3px #FFFAFA;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	float: right;
+}
+
+.form-style-3  button[type=button]{
+background: #F4EDED;
+border: 1px solid  #FFC2DC;
+padding: 5px 15px 5px 15px;
+color: #C28F8F;
+box-shadow: inset -1px -1px 3px #FFFAFA;
+-moz-box-shadow: inset -1px -1px 3px #FFFAFA;
+-webkit-box-shadow: inset -1px -1px 3px #FFFAFA;
+border-radius: 3px;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+font-weight: bold;
+float: left;
+}
+
+.poto {
+	position: absolute;
+	width: 150px;
+	right: -100px;
+	top: 70px;
+	border-radius: 100%;
+}
+
+.form-style-3 .required{
+	color:red;
+	font-weight:normal;
+}
+
+
+</style>

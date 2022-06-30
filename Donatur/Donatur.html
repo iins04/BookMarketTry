@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Donatur</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+            <img src="picture/logo.PNG" style="width: 10%">
+    	</header>
+      <!-- Navbar -->
+    </body>
+    	<div>
+    		<nav class="navigate">
+    			<div>
+    				<ul>
+    					<li class="item"><a href="../Home/Home.html">Beranda</a></li>
+            			<li class="item"><a href="../Shopping/Shopping.html">Belanja</a></li>
+            			<li class="item"><a href="../Donatur/Donatur.html">Donatur</a></li>
+            			<li class="item"><a href="../Profile/profilebaru.html">Profil</a></li>
+            		</ul>
+            	</div>
+        	</nav>
+        </div>
+ 
+		<div class="container">
+			<div class="image">
+				<p class="intro">
+					<b>SELAMAT DATANG DI DONATUR!</b><br>Donatur merupakan fitur untuk mendonasikan buku yang masih layak dan sudah tak terpakai. Buku tersebut nantinya akan didonasikan ke daerah yang kekurangan.<br>
+				</p>
+				<div class="container1">
+				<form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
+					<!-- <form action="login.php" method="POST"><br><br> -->
+						<fieldset>
+							<legend><b>Data Diri Donatur</b></legend>
+							<table>
+								<tr>
+									<td><label>Nama:</label></td>
+									<td><input type="text" name="nama" placeholder="nama donatur..." /></td>
+								</tr>
+								<tr>
+									<td><label>Email:</label></td>
+			            			<td><input type="email" name="email" placeholder="email..." /></td>
+			            		</tr>
+								<tr>
+									<td><label>Jumlah Buku:</label></td>
+									<td><input type="text" name="jumlah buku" placeholder="jumlah buku..." /></td>
+								</tr>
+								<tr>
+									<td><label>Alamat:</label></td>
+									<td><textarea name="alamat" placeholder="alamat lengkap..."></textarea></td>
+								</tr>
+								<tr>
+									<td><label>Kategori Buku:</label></td>
+									<td><select name="buku" class="form-control">
+									<option value="0">Kategori Buku</option>
+			                		<option value="1">Buku Anak</option>
+			               		 	<option value="2">Novel</option>
+			                		<option value="3">Buku Pelajaran</option>
+			                		<option value="4">Buku Agama</option>
+			                		<option value="5">Buku Masak</option>
+			                		<option value="6">Lainnya</option>
+			            			</select></td>
+								</tr>
+							</table>
+							<!-- <input type="submit" name="submit" value="Donasi"/> -->
+							<button type="Donasi" class="btn btn-primary">Donasi</button>
+						</fieldset>
+					</form>
+				</div>
+				<script>
+			 		function validateForm() {
+			            if (document.forms["formPendaftaran"]["nama"].value == "") {
+			                alert("Nama Tidak Boleh Kosong");
+			                document.forms["formPendaftaran"]["nama"].focus();
+			                return false;
+			            }
+			            if (document.forms["formPendaftaran"]["email"].value == "") {
+			                alert("Email Tidak Boleh Kosong");
+			                document.forms["formPendaftaran"]["email"].focus();
+			                return false;
+			            }
+			            if (document.forms["formPendaftaran"]["buku"].selectedIndex < 1) {
+			                alert("Pilih Kategori Buku.");
+			                document.forms["formPendaftaran"]["buku"].focus();
+			                return false;
+			            }
+			        }
+			    </script>
+				
+				<h3>Donasi Hari ini</h3>
+				<div class="satu box">
+					<img src="picture/anak.jpg" alt="anak"> <br>
+					<h4>Buku Anak</h4>
+				</div>
+				<div class="dua box">
+					<img src="picture/novel.jpeg" alt="novel"><br>
+					<h4>Novel</h4>
+				</div>
+				<div class="tiga box">
+					<img src="picture/pelajaran.jpg" alt="pelajaran"><br>
+					<h4>Buku Pelajaran</h4>
+				</div>
+				<div class="empat box">
+					<img src="picture/agama.jfif" alt="agama"><br>
+					<h4>Buku Agama</h4>
+				</div>
+				<div class="lima box">
+					<img src="picture/masak.jpg" alt="masak"><br>
+					<h4>Buku Masak</h4>
+				</div>
+				<div class="enam box">
+					<img src="picture/lainnya.jpeg" alt="lainnya"><br>
+					<h4>Lainnya</h4>
+				</div>	
+			<div class="clear"></div>
+			<div class="genre">
+				<br>
+				<h2>Total Buku Hari ini : 50 Buku</h2>
+			</div>
+			 
+			
+			<!-- <div class="icon1">ICON1</div>
+			<div class="saran">Saran Buku Untukmu</div>
+			<div class="icon2">ICON2</div> -->
+			<div><footer><i>Copyright SERVAL 2020 ReadAble</i></footer></div>
+		</div>
+
+		</div>
+       </div>
+	</body>
+</html>

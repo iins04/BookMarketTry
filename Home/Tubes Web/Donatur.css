@@ -1,0 +1,125 @@
+.container{
+	width: 100%;
+	display: grid;
+	font-size: 15px;
+	grid-template-areas: "header header header header"
+	"home shopping donatur profile"
+	"image image image image"
+	"genre genre genre genre";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.4fr 3fr 0.5fr;
+}
+.header {
+	grid-area: header;
+	box-sizing: border-box;
+	background-color: #f7f7f7;
+	padding-top: 10px;
+	color: red;
+	font-weight: bolder;
+	
+}
+.home,.shopping,.donatur,.profile{
+	text-align: center;
+	padding-top: 10px;
+	background-color: #bc5b5b;
+	
+}
+h4 {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0;
+}
+.image .satu img{
+	width: 180px;
+	height: 230px;
+	padding: 10px;
+}
+.image .dua img {
+	width: 180px;
+	height: 230px;
+	padding: 10px;
+}
+.image .tiga img {
+	width: 180px;
+	height: 230px;
+	padding: 10px;
+}
+.image .enam img {
+	width: 180px;
+	height: 230px;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	background-color: darkgrey;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+.home {
+	grid-area: home;
+	
+}
+.shopping{
+	grid-area: shopping;
+	
+}
+.donatur {
+	grid-area: donatur;
+	background-color: #fdab9f;
+}
+.profile {
+	grid-area: profile;
+	
+}
+.image{
+	grid-area: image;
+	background-color: #f7f7f7;
+	padding-bottom: 5px;
+}
+.image .box {
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 200px;
+	height: 300px;
+	margin-right: 10px;
+	margin-left: 12px;
+	color: white;
+}
+.genre {
+	grid-area: genre;
+	background-color: #fdab9f;
+	padding-top: 8px;
+}
+.container .image .box {
+	float: left;
+	background-color: #bc5b5b;
+}
+.clear {
+	clear: left;
+}
+h3 {
+	margin-left: 5px;
+}
+h2{
+	margin-left: 15px;
+}
+/*.icon1 {
+	grid-area: icon1;
+	background-color: violet;
+}
+.saran {
+	grid-area: saran;
+	background-color: grey;
+	padding-top: 8px;
+}
+.icon2 {
+	grid-area: icon2;
+	background-color: pink;
+}*/
+
+
